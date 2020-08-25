@@ -36,23 +36,23 @@
 
 ​          目录下文件说明：
 
-​		  ① redis-benchmark:性能测试工具，可以在自己本子运行，看看自己本子性能如何。
-
-​		  ② redis-check-aof：修复有问题的AOF文件。
-
-​          ③ redis-check-dump：修复有问题的dump.rdb文件。
-
-​          ④ redis-cli：客户端，操作入口。
-
-​          ⑤ redis-sentinel：redis集群使用。
-
-​          ⑥ redis-server：Redis服务器启动命令。
+```
+redis-benchmark:性能测试工具，可以在自己本子运行，看看自己本子性能如何。
+redis-check-aof：修复有问题的AOF文件。
+redis-check-dump：修复有问题的dump.rdb文件。
+redis-cli：客户端，操作入口。
+redis-sentinel：redis集群使用。
+redis-server：Redis服务器启动命令。
+```
 
 ​	7、启动
 
-​		  ① redis-server /myredis/redis.conf  (运行指定配置文件的redis服务)
+```
+redis-server /myredis/redis.conf  (运行指定配置文件的redis服务)
+redis-cli -p 6379 （启动客户端）
+```
 
-​          ② redis-cli -p 6379 （启动客户端）
+
 
 ### Redis配置文件详解
 
@@ -92,13 +92,12 @@
 
 ​    默认为verbose：
 
-​					① debug    很多的信息，在开发测试阶段有用。
-
-​					② verbose  冗长的，啰嗦的，比debug的日志稍微少一点，更加有用。
-
-​					③ notice      用于生产环境，更多你关注的信息。
-
-​					④ warning   非常重要的信息。
+```
+debug    很多的信息，在开发测试阶段有用。
+verbose  冗长的，啰嗦的，比debug的日志稍微少一点，更加有用。
+notice   用于生产环境，更多你关注的信息。
+warning  非常重要的信息。
+```
 
 ###### logfile
 
@@ -148,5 +147,4 @@ Redis的数据库数量。默认是16。
 
 ##### REPLICATION复制
 
-###### 
 
